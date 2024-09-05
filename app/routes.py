@@ -3,8 +3,8 @@ from flask import render_template
 @app.route('/')
 @app.route('/index')
 def index():
-    name = "Isaias"
-    dados = {"profissao": "Musico", "instrumento": "Violino", "time": "Flamengo"}
+    name = "Anne"
+    dados = {"profissao": "Professora", "Turno": "Manhã", "time": "São Paulo"}
     return render_template('index.html', name=name, dados=dados)
 
 @app.route('/contato')
